@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>investment</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="full-page">
-            <div class="navbar">
-                <div>
-                    <a=href="index.html">investment</a>
-                </div>
-                <nav>
-                    <ul id="menuitem">
-                        <li><a href='#'>Home</a></li>
-                        <li><a href='#'>About Us</a></li>
-                        <li><a href='#'>Services</a></li>
-                        <li><a href='#'>Contact</a></li>
-                        <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'"
-                            style="width:auto;">Login</button>
-                        </li>
 
-                    </ul>
-                </nav>   
-         </div>   
+<head>
+    <meta charset="UTF-8" />
+    <title>investment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href="index.html">investment</a>
+            </div>
+            <nav>
+                <ul id="menuitem">
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
+                    <li><a href='#'>Services</a></li>
+                    <li><a href='#'>Contact</a></li>
+                    <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
         <div id='login-form' class='login-page'>
             <div class='form-box'>
                 <div class='button-box'>
                     <div id='btn'></div>
-                    <button
-                    type='button' onclick='login()'class='toggle-btn'>Log In</button>
-                    <button
-                    type='button' onclick='register()'class='toggle-btn'>Register</button>
+                    <button type='button' onclick='login()' class='toggle-btn'>Log In</button>
+                    <button type='button' onclick='register()' class='toggle-btn'>Register</button>
                 </div>
                 <form id='login' class='input-group-login'>
                     <input type='text' class='input-field' placeholder='Email Id' required>
@@ -52,34 +51,34 @@
 
         </div>
 
-        </div>
-        </div>
-        <script>
-            var x=document.getElementById("login");
-            var y=document.getElementById("login");
-            var z=document.getElementById("login");
-            function register()
-            {
-                x.style.left='400px';
-                y.style.left='50px';
-                z.style.left='110px';
+    </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("login");
+        var z = document.getElementById("login");
 
+        function register() {
+            x.style.left = '400px';
+            y.style.left = '50px';
+            z.style.left = '110px';
+
+        }
+
+        function login() {
+            x.style.left = '50px';
+            y.style.left = '450px';
+            z.style.left = '0px';
+        }
+    </script>
+    <script>
+        var model = document.getElementById("login-form");
+        window.onclick = function(event) {
+            if (event.target == model.value) {
+                model.style.display = "none";
             }
-            function login()
-            {
-                x.style.left='50px';
-                y.style.left='450px';
-                z.style.left='0px';
-            }
-        </script>
-        <script>
-            var model=document.getElementById("login-form");
-            window.onclick=function(event)
-            {
-                if(event.target==model.value){
-                    model.style.display="none";
-                }
-            }
-        </script>
-        </body>
+        }
+    </script>
+</body>
+
 </html>
