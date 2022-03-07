@@ -6,80 +6,46 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="full-page">
-            <div class="navbar">
-                <div>
-                    <a=href="index.html">investment</a>
-                </div>
-                <nav>
-                    <ul id="menuitem">
-                        <li><a href='#'>Home</a></li>
-                        <li><a href='#'>About Us</a></li>
-                        <li><a href='#'>Services</a></li>
-                        <li><a href='#'>Contact</a></li>
-                        <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'"
-                            style="width:auto;">Login</button>
-                        </li>
+        <h2>MONTHLY EXPENSES</h2>
 
-                    </ul>
-                </nav>   
-         </div>   
-        <div id='login-form' class='login-page'>
-            <div class='form-box'>
-                <div class='button-box'>
-                    <div id='btn'></div>
-                    <button
-                    type='button' onclick='login()'class='toggle-btn'>Log In</button>
-                    <button
-                    type='button' onclick='register()'class='toggle-btn'>Register</button>
-                </div>
-                <form id='login' class='input-group-login'>
-                    <input type='text' class='input-field' placeholder='Email Id' required>
-                    <input type='password' class='input-field' placeholder='Enter Password' required>
-                    <input type='checkbox' class='checkbox'><span>Remember Password</span>
-                    <button type='submit' class='submit-btn'>Log In</button>
-                </form>
-                <form id='register' class='input-group-register'>
-                    <input type='text' class='input-field' placeholder='First Name' required>
-                    <input type='text' class='input-field' placeholder='Last Name' required>
-                    <input type='email' class='input-field' placeholder='Email Id' required>
-                    <input type='password' class='input-field' placeholder='Enter Password' required>
-                    <input type='password' class='input-field' placeholder='Confirm Password' required>
-                    <input type='checkbox' class='checkbox'><span>I agree to the terms and conditions</span>
-                    <button type='submit' class='submit-btn'>Register</button>
-                </form>
-            </div>
+        <form action="">
+          <label for="housing">Housing or Rent:</label>
+          <input type="number" id="housing" name="housing" ><br><br>
+          <label for="transport">Travel Expenses:</label>
+          <input type="number" id="transport" name="transport" ><br><br>
+          <label for="Food">Food:</label>
+          <input type="number" id="Food" name="Food" ><br><br>
+          <label for="Utility">Utility Bills:</label>
+          <input type="number" id="Utility" name="Utility" ><br><br>
+          <label for="Cell">Cell Phone:</label>
+          <input type="number" id="cell" name="cell" ><br><br>
+          <label for="child">Childcare And School Cost:</label>
+          <input type="number" id="child" name="child" ><br><br>
+          <label for="cloth">Clothing And Personal Upkeep:</label>
+          <input type="number" id="cloth" name="cloth" ><br><br>
+          <label for="health">Health Insurance:</label>
+          <input type="number" id="health" name="health" ><br><br>
+          <label for="sub">Monthly Membership And Subscriptions:</label>
+          <input type="number" id="sub" name="sub" ><br><br>
+         <label for="life">Life Insurance:</label>
+          <input type="number" id="life" name="life" ><br><br>
+          <label for="home">Home Owners Insurance:</label>
+          <input type="number" id="home" name="home" ><br><br>
+          <label for="entertain">Entertainment:</label>
+          <input type="number" id="entertain" name="entertain" ><br><br>
+          <label for="loan">Student Loan:</label>
+          <input type="number" id="loan" name="loan" ><br><br>
+          <label for="credit"> Credit Card Debt:</label>
+          <input type="number" id="credit" name="credit" ><br><br>
+          <label for="emergency">Emergency Fund:</label>
+          <input type="number" id="emergency" name="emergency" ><br><br>
+          <label for="large">Large Purchases:</label>
+          <input type="number" id="large" name="large" ><br><br>
+          <input class="button" type="submit" value="Submit" onclick="Calculate()">
+        </form> 
+        
+        <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+        <script src="script.js"></script>   
+    </body>
 
-        </div>
-
-        </div>
-        </div>
-        <script>
-            var x=document.getElementById("login");
-            var y=document.getElementById("login");
-            var z=document.getElementById("login");
-            function register()
-            {
-                x.style.left='400px';
-                y.style.left='50px';
-                z.style.left='110px';
-
-            }
-            function login()
-            {
-                x.style.left='50px';
-                y.style.left='450px';
-                z.style.left='0px';
-            }
-        </script>
-        <script>
-            var model=document.getElementById("login-form");
-            window.onclick=function(event)
-            {
-                if(event.target==model.value){
-                    model.style.display="none";
-                }
-            }
-        </script>
-        </body>
 </html>
