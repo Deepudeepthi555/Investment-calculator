@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts.apps.AccountsConfig',
     'rest_framework',
+    'biodata.apps.BiodataConfig',
 ]
 
 MIDDLEWARE = [
