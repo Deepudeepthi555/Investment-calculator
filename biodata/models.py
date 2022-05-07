@@ -8,6 +8,9 @@ class Student(models.Model):
     phone=models.CharField(max_length=50)
     address=models.TextField()
     dateofbirth=models.DateField()
+    def __str__(self):
+        return self.name 
+
 class expense(models.Model):
     student = models.ForeignKey(Student,on_delete=models.CASCADE)
     housingrent = models.DecimalField(max_digits=10,decimal_places=2)

@@ -6,3 +6,11 @@ class StudentSerializer(serializers.HyperlinkedModelSerializer):
         model = Student
         fields = ('name','age','email','phone','address','dateofbirth')
 
+
+
+class ExpenseSerializer(serializers.HyperlinkedModelSerializer):
+        
+
+    class Meta:
+         model = expense
+         fields = ('student','housingrent','travelexp','foodexp','Utilitybills','Cellphonebill','Groceryexp','Clothingexp','healthinsurance')
