@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expenses</title>
+    <link rel="stylesheet" href="expensestyle.css">
+    <!---we had linked our css file----->
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div class="projectname">
+                <a href='website.html'><i><b><h>Manage Your Investment</h></b></i></a>
+            </div>
+            <nav>
+                <button class='more' onclick="document.getElementById('add-form').style.display='block'" style="width:auto;">More</button></li>
+            </nav>
+           </div>
+        <div class="card">
+            <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%"> -->
+            <div class="container"></div>
+          </div>
+        <div id='add-form'class='add-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn1'></div>
+                    <button type='button'onclick='add()'class='toggle-btn'><b>Add</b></button>
+                    <button type='button'onclick='view()'class='toggle-btn'><b>View</b></button>
+                </div>
+                <form id='addnewone' class='input-add'>
+            <input type='text'class='input-field'placeholder='Email Id' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn'>Add</button>
+		 </form>
+		 <form id='view1' class='input-view'>
+		     <input type='text'class='input-field'placeholder='First Name' required>
+		     <input type='text'class='input-field'placeholder='Last Name ' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                    <button type='submit'class='submit-btn'>Search</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('addnewone');
+		var y=document.getElementById('view1');
+		var z=document.getElementById('btn1');
+		function add()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function view()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('add-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
