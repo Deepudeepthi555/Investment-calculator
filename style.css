@@ -23,7 +23,15 @@
     padding: 20px;
     padding-left: 50px;
     padding-right: 30px;
-    padding-top: 50px;
+    padding-top: 30px;
+}
+.projectname
+{
+	display: absolute;
+    align-items: center;
+	/* padding: -20px; */
+	padding-right: 10px;
+	padding-top: 20px;
 }
 nav
 {
@@ -79,9 +87,10 @@ a
 {
     width:380px;
 	height:480px;
+	border-radius: 15px;
 	position:relative;
 	margin:2% auto;
-	background:rgba(121, 4, 4, 0.3);
+	background:rgba(71, 51, 119, 0.397);
 	padding:10px;
     overflow: hidden;
 }
@@ -90,11 +99,12 @@ a
 	width:220px;
 	margin:35px auto;
 	position:relative;
-	box-shadow: 0 0 20px 9px #ff61241f;
+	box-shadow: 0 0 20px 9px #1c0dee21;
 	border-radius: 30px;
 }
 .toggle-btn
 {
+	text-emphasis-color: white;
 	padding:10px 30px;
 	cursor:pointer;
 	background:transparent;
@@ -109,7 +119,7 @@ a
 	position: absolute;
 	width: 110px;
 	height: 100%;
-	background: #F3C693;
+	background: #3d69ac9c;
 	border-radius: 30px;
 	transition: .5s;
 }
@@ -146,7 +156,7 @@ a
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background: #F3C693;
+	background: #3d69ac9c;
 	border: 0;
 	outline: none;
 	border-radius: 30px;
