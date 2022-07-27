@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            border: 2px solid #ccc;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 16px;
+            margin: 16px 0
+        }
+
+        .container::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .container img {
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+
+        .container span {
+            font-size: 20px;
+            margin-right: 15px;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                text-align: center;
+            }
+
+            .container img {
+                margin: auto;
+                float: none;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Manage your expense here....</h1>
+
+
+    <div class="container">
+
+        <label for="Rent" style="font-size: 25px"><b>Rent&nbsp;&nbsp;</b></label>
+        <input type="number" name="rent" style="width: 70px;">
+
+        <label for="Food" style="font-size: 25px"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Food and
+                Groceries&nbsp;&nbsp;</b></label>
+        <input type="number" name="Food" style="width: 70px;">
+
+        <label for="Rent" style="font-size: 25px"><b>Rent&nbsp;&nbsp;</b></label>
+        <input type="number" name="rent" style="width: 70px;">
+
+        <label for="Rent" style="font-size: 25px"><b>Rent&nbsp;&nbsp;</b></label>
+        <input type="number" name="rent" style="width: 70px;">
+
+
+
+
+
+    </div>
+
+    <div class="container">
+        <input type='text' class='input-field' placeholder='Email Id' required>
+        <p><span>Rebecca Flex.</span> CEO at Company.</p>
+        <p>No one is better than John Doe.</p>
+    </div>
+
+</body>
+
+</html>
